@@ -4,3 +4,18 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+Console.Write("Введите день недели (От 1 до 7): ");
+int weekDay = Convert.ToInt32(Console.ReadLine());
+if (weekDay <= 7 && weekDay >= 6)
+{
+    Console.WriteLine("ВЫХОДНОЙ!");
+}
+else if (weekDay <= 5 && weekDay >= 1)
+{
+    Console.WriteLine("Будний день!");
+}
+else if (weekDay > 7 || weekDay < 1)
+{
+    Console.WriteLine("Значение не обозначает день недели!");
+}
